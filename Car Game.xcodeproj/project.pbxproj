@@ -1,0 +1,427 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B112534B1AAC398A00FC7E12 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B112534A1AAC398A00FC7E12 /* Images.xcassets */; };
+		B12011C21AAD14940029A7E5 /* Car-Black.png in Resources */ = {isa = PBXBuildFile; fileRef = B12011BD1AAD14940029A7E5 /* Car-Black.png */; };
+		B12011C31AAD14940029A7E5 /* Car-Blue.png in Resources */ = {isa = PBXBuildFile; fileRef = B12011BE1AAD14940029A7E5 /* Car-Blue.png */; };
+		B12011C41AAD14940029A7E5 /* Car-Red.png in Resources */ = {isa = PBXBuildFile; fileRef = B12011BF1AAD14940029A7E5 /* Car-Red.png */; };
+		B12011C51AAD14940029A7E5 /* Car-Green.png in Resources */ = {isa = PBXBuildFile; fileRef = B12011C01AAD14940029A7E5 /* Car-Green.png */; };
+		B12011C61AAD14940029A7E5 /* Car-Brown.png in Resources */ = {isa = PBXBuildFile; fileRef = B12011C11AAD14940029A7E5 /* Car-Brown.png */; };
+		B12011C91AAD16C10029A7E5 /* Road.png in Resources */ = {isa = PBXBuildFile; fileRef = B12011C81AAD16C10029A7E5 /* Road.png */; };
+		B12011CC1AAD17550029A7E5 /* Car.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B12011CA1AAD17550029A7E5 /* Car.cpp */; };
+		B13C68A31AADCCF30018C300 /* Explosion.png in Resources */ = {isa = PBXBuildFile; fileRef = B13C68A21AADCCF30018C300 /* Explosion.png */; };
+		B15C0A451AAC2F7900D85E38 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B15C0A441AAC2F7900D85E38 /* main.cpp */; };
+		B15C0A471AAC2FCD00D85E38 /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B15C0A461AAC2FCD00D85E38 /* SDL2.framework */; };
+		B15C0A491AAC2FED00D85E38 /* SDL2.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = B15C0A461AAC2FCD00D85E38 /* SDL2.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B171B9561AAC336700FAFC19 /* SDL2_image.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B171B9551AAC336700FAFC19 /* SDL2_image.framework */; };
+		B171B9571AAC337200FAFC19 /* SDL2_image.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = B171B9551AAC336700FAFC19 /* SDL2_image.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B19796721AAEB37600D631BC /* SDL2_ttf.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B19796711AAEB37600D631BC /* SDL2_ttf.framework */; };
+		B19796731AAEB38100D631BC /* SDL2_ttf.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = B19796711AAEB37600D631BC /* SDL2_ttf.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B19796751AAEB81200D631BC /* Herculanum.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B19796741AAEB6B100D631BC /* Herculanum.ttf */; };
+		B1D832011AAD596200DF3FF6 /* End2.png in Resources */ = {isa = PBXBuildFile; fileRef = B1D831F81AAD596200DF3FF6 /* End2.png */; };
+		B1D832021AAD596200DF3FF6 /* Hard.png in Resources */ = {isa = PBXBuildFile; fileRef = B1D831F91AAD596200DF3FF6 /* Hard.png */; };
+		B1D832031AAD596200DF3FF6 /* Resume.png in Resources */ = {isa = PBXBuildFile; fileRef = B1D831FA1AAD596200DF3FF6 /* Resume.png */; };
+		B1D832041AAD596200DF3FF6 /* Quit.png in Resources */ = {isa = PBXBuildFile; fileRef = B1D831FB1AAD596200DF3FF6 /* Quit.png */; };
+		B1D832051AAD596200DF3FF6 /* Medium.png in Resources */ = {isa = PBXBuildFile; fileRef = B1D831FC1AAD596200DF3FF6 /* Medium.png */; };
+		B1D832061AAD596200DF3FF6 /* End.png in Resources */ = {isa = PBXBuildFile; fileRef = B1D831FD1AAD596200DF3FF6 /* End.png */; };
+		B1D832071AAD596200DF3FF6 /* Play.png in Resources */ = {isa = PBXBuildFile; fileRef = B1D831FE1AAD596200DF3FF6 /* Play.png */; };
+		B1D832081AAD596200DF3FF6 /* Restart.png in Resources */ = {isa = PBXBuildFile; fileRef = B1D831FF1AAD596200DF3FF6 /* Restart.png */; };
+		B1D832091AAD596200DF3FF6 /* Easy.png in Resources */ = {isa = PBXBuildFile; fileRef = B1D832001AAD596200DF3FF6 /* Easy.png */; };
+		B1E4AC031AAE43F60047CC53 /* SDL2_mixer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1E4AC021AAE43F60047CC53 /* SDL2_mixer.framework */; };
+		B1E4AC041AAE44080047CC53 /* SDL2_mixer.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = B1E4AC021AAE43F60047CC53 /* SDL2_mixer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B1E4AC081AAE46730047CC53 /* Explosion.wav in Resources */ = {isa = PBXBuildFile; fileRef = B1E4AC071AAE46730047CC53 /* Explosion.wav */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B15C0A481AAC2FE700D85E38 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B15C0A491AAC2FED00D85E38 /* SDL2.framework in CopyFiles */,
+				B171B9571AAC337200FAFC19 /* SDL2_image.framework in CopyFiles */,
+				B1E4AC041AAE44080047CC53 /* SDL2_mixer.framework in CopyFiles */,
+				B19796731AAEB38100D631BC /* SDL2_ttf.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		B112534A1AAC398A00FC7E12 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B12011BD1AAD14940029A7E5 /* Car-Black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Car-Black.png"; sourceTree = "<group>"; };
+		B12011BE1AAD14940029A7E5 /* Car-Blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Car-Blue.png"; sourceTree = "<group>"; };
+		B12011BF1AAD14940029A7E5 /* Car-Red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Car-Red.png"; sourceTree = "<group>"; };
+		B12011C01AAD14940029A7E5 /* Car-Green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Car-Green.png"; sourceTree = "<group>"; };
+		B12011C11AAD14940029A7E5 /* Car-Brown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Car-Brown.png"; sourceTree = "<group>"; };
+		B12011C81AAD16C10029A7E5 /* Road.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Road.png; sourceTree = "<group>"; };
+		B12011CA1AAD17550029A7E5 /* Car.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Car.cpp; sourceTree = "<group>"; };
+		B12011CB1AAD17550029A7E5 /* Car.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Car.h; sourceTree = "<group>"; };
+		B13C68A21AADCCF30018C300 /* Explosion.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Explosion.png; sourceTree = "<group>"; };
+		B15C0A211AAC2F3D00D85E38 /* Car Game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Car Game.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B15C0A251AAC2F3D00D85E38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B15C0A441AAC2F7900D85E38 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		B15C0A461AAC2FCD00D85E38 /* SDL2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2.framework; path = ../../../../Library/Frameworks/SDL2.framework; sourceTree = "<group>"; };
+		B171B9551AAC336700FAFC19 /* SDL2_image.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2_image.framework; path = ../../../../Library/Frameworks/SDL2_image.framework; sourceTree = "<group>"; };
+		B19796711AAEB37600D631BC /* SDL2_ttf.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2_ttf.framework; path = ../../../../Library/Frameworks/SDL2_ttf.framework; sourceTree = "<group>"; };
+		B19796741AAEB6B100D631BC /* Herculanum.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Herculanum.ttf; sourceTree = "<group>"; };
+		B1D831F81AAD596200DF3FF6 /* End2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = End2.png; sourceTree = "<group>"; };
+		B1D831F91AAD596200DF3FF6 /* Hard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Hard.png; sourceTree = "<group>"; };
+		B1D831FA1AAD596200DF3FF6 /* Resume.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Resume.png; sourceTree = "<group>"; };
+		B1D831FB1AAD596200DF3FF6 /* Quit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Quit.png; sourceTree = "<group>"; };
+		B1D831FC1AAD596200DF3FF6 /* Medium.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Medium.png; sourceTree = "<group>"; };
+		B1D831FD1AAD596200DF3FF6 /* End.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = End.png; sourceTree = "<group>"; };
+		B1D831FE1AAD596200DF3FF6 /* Play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Play.png; sourceTree = "<group>"; };
+		B1D831FF1AAD596200DF3FF6 /* Restart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Restart.png; sourceTree = "<group>"; };
+		B1D832001AAD596200DF3FF6 /* Easy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Easy.png; sourceTree = "<group>"; };
+		B1E4AC021AAE43F60047CC53 /* SDL2_mixer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2_mixer.framework; path = ../../../../Library/Frameworks/SDL2_mixer.framework; sourceTree = "<group>"; };
+		B1E4AC071AAE46730047CC53 /* Explosion.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Explosion.wav; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B15C0A1E1AAC2F3D00D85E38 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B19796721AAEB37600D631BC /* SDL2_ttf.framework in Frameworks */,
+				B1E4AC031AAE43F60047CC53 /* SDL2_mixer.framework in Frameworks */,
+				B171B9561AAC336700FAFC19 /* SDL2_image.framework in Frameworks */,
+				B15C0A471AAC2FCD00D85E38 /* SDL2.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B112534E1AAC3CB500FC7E12 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				B13C68A21AADCCF30018C300 /* Explosion.png */,
+				B12011C81AAD16C10029A7E5 /* Road.png */,
+				B1D831F71AAD595300DF3FF6 /* Menu */,
+				B12011C71AAD149A0029A7E5 /* Cars */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		B12011C71AAD149A0029A7E5 /* Cars */ = {
+			isa = PBXGroup;
+			children = (
+				B12011BD1AAD14940029A7E5 /* Car-Black.png */,
+				B12011BE1AAD14940029A7E5 /* Car-Blue.png */,
+				B12011BF1AAD14940029A7E5 /* Car-Red.png */,
+				B12011C01AAD14940029A7E5 /* Car-Green.png */,
+				B12011C11AAD14940029A7E5 /* Car-Brown.png */,
+			);
+			name = Cars;
+			sourceTree = "<group>";
+		};
+		B15C0A181AAC2F3D00D85E38 = {
+			isa = PBXGroup;
+			children = (
+				B15C0A231AAC2F3D00D85E38 /* Car Game */,
+				B15C0A4A1AAC321D00D85E38 /* Frameworks */,
+				B15C0A221AAC2F3D00D85E38 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B15C0A221AAC2F3D00D85E38 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B15C0A211AAC2F3D00D85E38 /* Car Game.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B15C0A231AAC2F3D00D85E38 /* Car Game */ = {
+			isa = PBXGroup;
+			children = (
+				B15C0A441AAC2F7900D85E38 /* main.cpp */,
+				B12011CA1AAD17550029A7E5 /* Car.cpp */,
+				B12011CB1AAD17550029A7E5 /* Car.h */,
+				B1E4AC071AAE46730047CC53 /* Explosion.wav */,
+				B19796741AAEB6B100D631BC /* Herculanum.ttf */,
+				B112534E1AAC3CB500FC7E12 /* Images */,
+				B15C0A241AAC2F3D00D85E38 /* Supporting Files */,
+			);
+			path = "Car Game";
+			sourceTree = "<group>";
+		};
+		B15C0A241AAC2F3D00D85E38 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B112534A1AAC398A00FC7E12 /* Images.xcassets */,
+				B15C0A251AAC2F3D00D85E38 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B15C0A4A1AAC321D00D85E38 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B19796711AAEB37600D631BC /* SDL2_ttf.framework */,
+				B1E4AC021AAE43F60047CC53 /* SDL2_mixer.framework */,
+				B171B9551AAC336700FAFC19 /* SDL2_image.framework */,
+				B15C0A461AAC2FCD00D85E38 /* SDL2.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B1D831F71AAD595300DF3FF6 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				B1D831F81AAD596200DF3FF6 /* End2.png */,
+				B1D831F91AAD596200DF3FF6 /* Hard.png */,
+				B1D831FA1AAD596200DF3FF6 /* Resume.png */,
+				B1D831FB1AAD596200DF3FF6 /* Quit.png */,
+				B1D831FC1AAD596200DF3FF6 /* Medium.png */,
+				B1D831FD1AAD596200DF3FF6 /* End.png */,
+				B1D831FE1AAD596200DF3FF6 /* Play.png */,
+				B1D831FF1AAD596200DF3FF6 /* Restart.png */,
+				B1D832001AAD596200DF3FF6 /* Easy.png */,
+			);
+			name = Menu;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B15C0A201AAC2F3D00D85E38 /* Car Game */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B15C0A3E1AAC2F3E00D85E38 /* Build configuration list for PBXNativeTarget "Car Game" */;
+			buildPhases = (
+				B15C0A1D1AAC2F3D00D85E38 /* Sources */,
+				B15C0A1E1AAC2F3D00D85E38 /* Frameworks */,
+				B15C0A1F1AAC2F3D00D85E38 /* Resources */,
+				B15C0A481AAC2FE700D85E38 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Car Game";
+			productName = Game;
+			productReference = B15C0A211AAC2F3D00D85E38 /* Car Game.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B15C0A191AAC2F3D00D85E38 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Pepe Apps";
+				TargetAttributes = {
+					B15C0A201AAC2F3D00D85E38 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+				};
+			};
+			buildConfigurationList = B15C0A1C1AAC2F3D00D85E38 /* Build configuration list for PBXProject "Car Game" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B15C0A181AAC2F3D00D85E38;
+			productRefGroup = B15C0A221AAC2F3D00D85E38 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B15C0A201AAC2F3D00D85E38 /* Car Game */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B15C0A1F1AAC2F3D00D85E38 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1D832021AAD596200DF3FF6 /* Hard.png in Resources */,
+				B12011C61AAD14940029A7E5 /* Car-Brown.png in Resources */,
+				B1D832061AAD596200DF3FF6 /* End.png in Resources */,
+				B1D832031AAD596200DF3FF6 /* Resume.png in Resources */,
+				B12011C51AAD14940029A7E5 /* Car-Green.png in Resources */,
+				B1D832041AAD596200DF3FF6 /* Quit.png in Resources */,
+				B1D832011AAD596200DF3FF6 /* End2.png in Resources */,
+				B13C68A31AADCCF30018C300 /* Explosion.png in Resources */,
+				B12011C21AAD14940029A7E5 /* Car-Black.png in Resources */,
+				B12011C31AAD14940029A7E5 /* Car-Blue.png in Resources */,
+				B12011C41AAD14940029A7E5 /* Car-Red.png in Resources */,
+				B1D832081AAD596200DF3FF6 /* Restart.png in Resources */,
+				B12011C91AAD16C10029A7E5 /* Road.png in Resources */,
+				B1D832071AAD596200DF3FF6 /* Play.png in Resources */,
+				B1D832091AAD596200DF3FF6 /* Easy.png in Resources */,
+				B1E4AC081AAE46730047CC53 /* Explosion.wav in Resources */,
+				B1D832051AAD596200DF3FF6 /* Medium.png in Resources */,
+				B19796751AAEB81200D631BC /* Herculanum.ttf in Resources */,
+				B112534B1AAC398A00FC7E12 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B15C0A1D1AAC2F3D00D85E38 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B12011CC1AAD17550029A7E5 /* Car.cpp in Sources */,
+				B15C0A451AAC2F7900D85E38 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		B15C0A3C1AAC2F3E00D85E38 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = NO;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		B15C0A3D1AAC2F3E00D85E38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		B15C0A3F1AAC2F3E00D85E38 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Frameworks",
+				);
+				INFOPLIST_FILE = "Car Game/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pepeapps.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "Car Game";
+			};
+			name = Debug;
+		};
+		B15C0A401AAC2F3E00D85E38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Frameworks",
+				);
+				INFOPLIST_FILE = "Car Game/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pepeapps.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "Car Game";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B15C0A1C1AAC2F3D00D85E38 /* Build configuration list for PBXProject "Car Game" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B15C0A3C1AAC2F3E00D85E38 /* Debug */,
+				B15C0A3D1AAC2F3E00D85E38 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B15C0A3E1AAC2F3E00D85E38 /* Build configuration list for PBXNativeTarget "Car Game" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B15C0A3F1AAC2F3E00D85E38 /* Debug */,
+				B15C0A401AAC2F3E00D85E38 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B15C0A191AAC2F3D00D85E38 /* Project object */;
+}
