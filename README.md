@@ -1,2 +1,2 @@
-# car-game
-A small car game made with SDL2
+# Car Game
+A small car game written in C++ using SDL2
