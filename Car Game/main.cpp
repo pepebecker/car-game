@@ -76,7 +76,7 @@ int main(int argc, const char * argv[]) {
         return EXIT_FAILURE;
     }
     
-    window = SDL_CreateWindow("Pepe's Game", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, SCREEN_WIDTH, SCREEN_HEIGHT, SDL_WINDOW_OPENGL);
+    window = SDL_CreateWindow("Car Game", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, SCREEN_WIDTH, SCREEN_HEIGHT, SDL_WINDOW_OPENGL);
     renderer = SDL_CreateRenderer(window, 0, SDL_RENDERER_ACCELERATED);
     
     Mix_OpenAudio(22050, MIX_DEFAULT_FORMAT, 2, 4096);
