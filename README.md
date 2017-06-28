@@ -3,7 +3,7 @@
 [![MIT-licensed](https://img.shields.io/github/license/pepebecker/car-game.svg)](https://opensource.org/licenses/MIT)
 [![chat on gitter](https://badges.gitter.im/pepebecker.svg)](https://gitter.im/pepebecker)
 
-# Project Site: [http://pepebecker.com/car-game/]](http://pepebecker.com/car-game/)
+## [http://pepebecker.com/car-game/](http://pepebecker.com/car-game/)
 
 ## Related
 
