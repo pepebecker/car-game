@@ -8,6 +8,7 @@
 ## Related
 
 - [`opengl-game`](https://github.com/pepebecker/opengl-game)
+- [`js-cars`](https://github.com/pepebecker/js-cars)
 
 ## Contributing
 
