@@ -18,7 +18,6 @@
 
 #include "Car.h"
 
-const char *VERSION = "1.0.0";
 const int SCREEN_WIDTH  = 640;
 const int SCREEN_HEIGHT = 512;
 const int FPS = 64;
@@ -50,10 +49,8 @@ Mix_Chunk *explosionSound;
 
 void LoadResources();
 void Start();
-void GameLoop();
 void Update();
 void Render();
-//void SpawnEnemy();
 
 int main(int argc, const char * argv[]) {
     if (SDL_Init(SDL_INIT_VIDEO) < 0) {
